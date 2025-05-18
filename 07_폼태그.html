@@ -5,7 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>폼태그</title>
 </head>
-<body>
+<ㄹ>
+    <h1>폼</h1>
+    <h2>검색</h2>
+    <form action="" method="get">
+    검색 : <input type="text" name="keyword">
+          <input type="text" value="검색">
+        </form>
+
+    <h2>로그인</h2>
+    <form action="" method="post">
+    아이디 : <input type="text" name="id" placeholder="아이디" required /><br />
+    비밀번호 : <input type="text" name="password" placeholder="비밀번호" /><br />
+                <input type="submit" />
+                <input type="reset" />
+                <input type="button" value="확인" onclick="alert('버튼클릭!')" />
+    </form>
+
+    <h2>라디오&채크박스</h2>
+    <form action="">
+        <fieldset>
+           <legend>성별</legend>
+        <label for="man">
+          <input type="radio" name="gender" value="남자" id="man" checked />
+          남자<br />
+        </label>
+        <input type="radio" name="gender" value="여자" id="woman" />
+        <label for="woman">여자</label>
+      </fieldset>
+<fieldset>
+        <legend>관심사</legend>
+        <input type="checkbox" di="travel" name="interest" value="travel" />
+        <label for="travel">여행</label>
+        <input type="checkbox" id="music" name="interest" value="music" />
+        <label for="music">음악</label>
+        <input type="checkbox" id="game" name="interest" value="game" />
+        <label for="game">게임</label>
+      </fieldset>
+      <input type="submit" />
+    </form>
+
+    <h2>파일, 숨김</h2>
+    <form action="">
+      <input type="file" name="upload" accept="image/*" />
+      <input type="hidden" name="data" value="1234" />
+      <button type="submit">전송</button>
+    </form>
+
+    <h2>날짜 & 시간</h2>
+
+    <form action="">
+      datetime-local : <input type="datetime-local" /><br />
+      week : <input type="week" /><br />
+      mount : <input type="month" /><br />
+      date : <input type="date" /><br />
+      time : <input type="time" />
+    </form>
+
+    <h2>그 외의 input</h2>
+    <form action="">
+      email : <input type="email" /><br />
+      url : <input type="url" /><br />
+      tel : <input type="tel" /><br />
+      search : <input type="search" /><br />
+      number : <input type="unmber" /><br />
+      range : <input type="range" /><br />
+      color : <input type="color" /> <button type="submit">전송</button><br />
+    </form>
+
+    <h2>select, textarea</h2>
+    <form action="">
+      <select name="national" id="">
+        <option value="" disabled selected>선택하세요</option>
+        <optgroup label="아시아">
+          <option value="kr">한국</option>
+          <option value="jp">일본</option>
+          <option value="ch">중국</option>
+        </optgroup>
+        <optgroup label="유럽">
+          <option value="fr">프랑스</option>
+        </optgroup></select
+      ><br />
+
+      <textarea style="resize: none" id=""></textarea>
+    </form>
+
+        
     
 </body>
 </html>
